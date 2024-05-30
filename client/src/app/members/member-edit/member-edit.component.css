@@ -2,6 +2,7 @@
     margin: 25px;
     width: 85%;
     height: 85%;
+    border-radius: 10%;
 }
 
 .card-body{
@@ -11,6 +12,6 @@
 
 .card-footer{
     padding: 10px 15px;
-
+    
     border-top: none;
 }

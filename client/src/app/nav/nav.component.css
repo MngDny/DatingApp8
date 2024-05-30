@@ -4,9 +4,11 @@
 
 img{
     max-height: 50px;
-    border: 2px solid white;
-    display: inline;
+    border: 2px solid rgb(255, 255, 255);
 
+    display: inline;
+    border-radius: 50%;
+    
 
 
 
