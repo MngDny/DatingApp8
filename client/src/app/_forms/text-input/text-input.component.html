@@ -5,6 +5,8 @@
         class="form-control" 
         [formControl]="control"
         placeholder="{{label}}"
+        [id]="id"
+
     >
     <div class="invalid-feedback" *ngIf="control.errors?.['required']">
         Please enter a {{label}}
