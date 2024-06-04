@@ -26,7 +26,7 @@ public class UsersController : BaseApiController
         _mapper = mapper;
         _photoService = photoService;
     }
-    [AllowAnonymous]
+    
     [HttpGet]
     public async Task<ActionResult<PagedList<MemberDto>>> Getusers([FromQuery]UserParams userParams)
     {
