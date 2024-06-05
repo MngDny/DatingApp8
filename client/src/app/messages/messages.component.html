@@ -74,7 +74,14 @@
                         <strong>{{message.senderUsername |titlecase}}</strong>
                     </div>
                 </td>
-                <td>{{message.messageSent|timeago}}</td>
+                <td>
+                    <span class="time-tooltip" title="{{ message.messageSent | date: 'dd MMMM yyyy' }}">
+                      {{ message.messageSent | date: 'HH:mm:ss' }}
+                      <br>
+                      {{ message.messageSent | timeago }}
+                    </span>
+                  </td>
+                
                 <td>
                     <button (click)="$event.stopPropagation()"(click)="deleteMessage(message.id)" class="btn btn-danger">Delete</button>
                 </td>
